@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>city</title>
+	<style>
+		select{width: 100px;}
+		#showBox{position: absolute;top: 50px;left: 10px;width: 300px;height: 30px;font-size: 20px;line-height: 30px;text-align: center;border: 1px solid #aaa;color: #000;}
+	</style>
+</head>
+<body>
+
+<select id="city"></select>
+<select id="country"></select>
+<select id="item"></select>
+<div id="showBox"></div>
+
+<script src="js/cityData.js"></script>
+<script src="js/city.js"></script>
+<script>
+var city = document.getElementById("city"),
+	country = document.getElementById("country"),
+	item = document.getElementById("item"),
+	showBox = document.getElementById("showBox");
+
+var selector = new CitySelector({
+	city: city,
+	country: country,
+	item: item,
+	showBox: showBox
+});
+
+
+
+
+
+	
+</script>
+</body>
+</html>
